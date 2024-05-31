@@ -1,0 +1,70 @@
+:root {
+  --grid-size: 25px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ddd;
+  display: grid;
+  place-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  border: black 1px solid;
+  position: relative;
+}
+
+.grid-element {
+  width: var(--grid-size);
+  height: var(--grid-size);
+  border: black 1px solid;
+  border-collapse: collapse;
+}
+
+.apple {
+  background-color: red;
+}
+
+.head {
+  background-color: green;
+}
+
+.body {
+  background-color: green;
+}
+
+.score-card {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: #ddd;
+  border: 1px solid #999;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.5rem;
+  transition: background-color 100ms linear;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+.hidden {
+  display: none;
+}
