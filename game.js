@@ -61,6 +61,13 @@ class Snake {
       document.querySelector('button').classList.remove('hidden');
       return;
     }
+    for (let i = 0; i < this.body.length; i++) {
+      if (this.body[i].x == this.head.x && this.body[i].y == this.head.y) {
+        this.is_running = false;
+        document.querySelector('button').classList.remove('hidden');
+        return;
+      }
+    }
   }
 
   move(dx, dy) {

@@ -1,1 +1,1 @@
-Snake Game created with vanilla JavaScript
+-- Snake Game created with vanilla JavaScript

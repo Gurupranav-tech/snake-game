@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
 :root {
   --grid-size: 25px;
 }
@@ -37,7 +39,7 @@ body {
 }
 
 .head {
-  background-color: green;
+  background-color: darkgreen;
 }
 
 .body {
@@ -67,4 +69,39 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.footer {
+  align-self: flex-end;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.footer > p {
+  font-size: 1.1rem;
+}
+
+.footer > p > span {
+  font-family: "Grey Qo", cursive;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.links > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  transition: all linear;
+}
+
+.links > a:hover {
+  transform: scale(1.1);
 }
